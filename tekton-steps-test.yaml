@@ -1,0 +1,18 @@
+apiVersion: tekton.dev/v1beta1
+kind: Task
+metadata:
+  name: tekton-steps
+spec:
+  steps:
+    - image: ubuntu  # contains bash
+      script: |
+        #!/usr/bin/env bash
+        echo "Hello from Bash!"
+    - image: python  # contains python
+      script: |
+        #!/usr/bin/env python
+        print("Hello from python")
+    - image: node  # contains node
+      script: |
+        #!/usr/bin/env node
+        console.log("Hello from Node!")
