@@ -9,13 +9,3 @@ spec:
       script: |
         #!/usr/bin/env bash
         echo "Hello from Bash!"
-    - name: step2
-      image: python  # contains python
-      script: |
-        #!/usr/bin/env python
-        print("Hello from python")
-    - name: step3
-      image: node  # contains node
-      script: |
-        #!/usr/bin/env node
-        console.log("Hello from Node!")
